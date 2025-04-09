@@ -1,71 +1,48 @@
-# ER Patient Wait Time Analysis - Readme
+# ER Patient Wait Time Analysis
 
-## Project Overview
+## Overview
 
-This project aims to analyze Emergency Room (ER) patient wait times to identify inefficiencies and bottlenecks that have contributed to recent increases. The analysis utilizes data to provide key statistics, identify patterns, and offer actionable recommendations for reducing wait times.
+This repository contains the analysis of Emergency Room (ER) patient wait times, aimed at identifying inefficiencies and bottlenecks contributing to recent increases in wait times. The analysis utilizes a dataset containing patient arrival times, wait times, day of the week, staffing levels, and ER visit types. The analysis was performed using Power BI for data visualization and Google Colab (Python) for statistical analysis.
 
-## Tools and Technologies
+## Dataset Description
 
-* **Power BI:**
-    * Used for interactive data visualization and dashboard creation.
-    * Allows for easy exploration of wait time trends, peak hours, and other relevant metrics.
-* **Google Colab (Python):**
-    * Used for data cleaning, preprocessing, and statistical analysis.
-    * Libraries such as Pandas, NumPy, and Matplotlib/Seaborn are used for data manipulation and visualization.
-    * Used for any complex calculations that are easier to do in python.
-* **SQL (potentially):**
-    * Used to Query and extract the data from the source database.
+The dataset includes the following columns:
 
-## Dataset
+-   `Patient_ID`: Unique identifier for each patient.
+-   `Arrival_Time`: Time of patient arrival at the ER.
+-   `Wait_Time_Minutes`: Time (in minutes) the patient waited before being seen.
+-   `Day_of_Week`: Day of the week the patient arrived.
+-   `Staff_On_Duty`: Staffing level (high, medium, low).
+-   `ER_Visit_Type`: Urgency level of the visit (urgent, non-urgent, critical).
 
-* The dataset includes information related to ER patient visits, including arrival times, treatment start times, and discharge times.
-* It is assumed that the dataset contains the necessary columns to calculate wait times.
-* It is assumed that the dataset has data for at least the past quarter.
+## Summary of Findings
 
-## Analysis Steps
+* **Increased Average Wait Time:** The average wait time has noticeably increased over the past quarter.
+* **Peak Hours:** Wait times are significantly higher during certain hours of the day, indicating potential bottlenecks during these periods.
+* **Day of Week Impact:** Specific days of the week exhibit higher average wait times, suggesting a correlation between patient volume and day of the week.
+* **Staffing Impact:** Lower staffing levels correlate with increased wait times.
+* **ER Visit Type Impact:** Critical and Urgent patients are managed faster than non-urgent ones, but non-urgent patients still exhibit long wait times.
 
-1.  **Data Extraction and Cleaning:**
-    * Extract relevant data from the database using SQL queries (if applicable).
-    * Clean and preprocess the data using Python (Pandas) to handle missing values, inconsistencies, and data type conversions.
-2.  **Wait Time Calculation:**
-    * Calculate the wait time for each patient visit by subtracting the arrival time from the treatment start time.
-    * Calculate the time spent in the ER, this would be the difference between arrival time and discharge time.
-3.  **Statistical Analysis:**
-    * Calculate key statistics such as average wait time, median wait time, and standard deviation using Python (NumPy).
-    * Identify peak hours and days by analyzing the distribution of patient arrivals and wait times.
-4.  **Pattern and Anomaly Detection:**
-    * Visualize wait time trends over time using line graphs in Power BI and/or Python (Matplotlib/Seaborn).
-    * Identify any anomalies or patterns, such as long wait times during specific hours or days, using Power BI and/or Python.
-5.  **Root Cause Analysis:**
-    * Investigate potential reasons for the rise in wait times, such as staffing shortages, process delays, or increased patient volume.
-    * Correlate the patient volume with the wait times.
-6.  **Visualization:**
-    * Create interactive dashboards in Power BI to visualize key findings, including wait time trends, peak hours, and patient volume.
-    * Create static visualizations in python to display specific findings.
-    * Examples:
-        * Bar chart of average wait time by hour of day.
-        * Line graph of average wait time over the past quarter.
-        * Heatmap of wait times by day of the week and hour of the day.
-7.  **Report Generation:**
-    * Summarize findings, key statistics, patterns, root cause analysis, and recommendations in a clear and concise report.
+## Key Statistics
 
-## Report Structure
+* **Average Wait Time:** Calculated and visualized using Power BI and Python.
+* **Median Wait Time:** Calculated to provide a robust measure of central tendency.
+* **Peak Arrival Hours:** Identified using time series analysis in Python and visualized in Power BI.
+* **Wait Time Distribution:** Analyzed to understand the spread and skewness of wait times.
 
-* **Summary of Findings:**
-    * Key statistics (average wait time, median, peak hours, etc.).
-    * Anomalies or patterns (e.g., long wait times during certain hours or days).
-* **Root Cause Analysis:**
-    * Possible reasons for the rise in wait times (e.g., staffing, process delays, volume of patients).
-* **Recommendations:**
-    * Actionable suggestions to help reduce wait times.
-* **Visualizations:**
-    * Supporting graphs and charts.
+## Anomalies and Patterns
 
-## Potential Visualizations
+* Longer wait times are observed during peak hours, particularly in the evening.
+* Weekends, especially Sundays, show a significant increase in wait times.
+* Low Staffing levels result in a clear increase in wait times.
 
-* **Average Wait Time by Hour of Day (Bar Chart):** To identify peak hours.
-* **Average Wait Time Over Time (Line Graph):** To visualize trends over the past quarter.
-* **Patient Volume by Hour of Day (Bar Chart):** To correlate patient volume with wait times.
-* **Wait Time Distribution (Histogram/Box Plot):** To visualize the spread of wait times.
-* **Wait Time by Day of the Week (Box Plot):** To compare wait times across different days.
-* **Heatmap of Wait Times by Day of Week and Hour:** To see a more granular view of wait times.
+## Root Cause Analysis
+
+1.  **Staffing Shortages During Peak Hours:** Insufficient staffing during peak hours leads to increased patient load per staff member, resulting in longer wait times.
+2.  **High Volume of Non-Urgent Patients:** A significant influx of non-urgent patients can clog the ER, delaying care for urgent and critical cases.
+
+## Recommendations
+
+1.  **Optimize Staff Scheduling:** Implement dynamic staffing schedules that align with peak hours and high-volume days. Consider using predictive analytics to forecast patient volume and adjust staffing accordingly.
+2.  **Triage Process Improvement:** Refine the triage process to efficiently prioritize urgent and critical cases. Consider a fast-track system for non-urgent patients to reduce their wait times and free up resources for more critical patients.
+3.  **Patient Flow Management:** Implement a patient flow management system to track patient movement and identify bottlenecks in real-time. This could involve using digital tools to streamline patient registration, assessment, and treatment processes.
