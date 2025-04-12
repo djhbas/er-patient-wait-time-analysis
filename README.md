@@ -73,13 +73,13 @@ The analysis includes the following steps:
 1.  **Staffing Limitations on Peak Demand Days:**
       On days like Friday, the combination of reduced staffing and increased arrivals of critical cases creates a bottleneck. The current staff mix may not be sufficient      to handle the surge of complex cases, leading to extended wait times.
 
-2.  **Inefficient Resource Allocation and Scheduling:
+2.  **Inefficient Resource Allocation and Scheduling:**
       A potential mismatch between staff scheduling and patient arrival patterns may be contributing to the prolonged wait times. There appears to be a disconnect 
       between peak demand periods and the availability of specialized staff trained to handle critical visits.
 
 ## Recommendations
 
-1.  **Optimize Staff Scheduling:
+1.  **Optimize Staff Scheduling:**
       Adjust staffing schedules to better align with the identified peak periods, particularly on Fridays. Consider increasing the number of staff during these high- 
       demand times or rearranging shifts to ensure that more experienced or specialized personnel are available to manage critical cases.
    
