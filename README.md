@@ -60,9 +60,12 @@ The analysis includes the following steps:
 
 ## Anomalies and Patterns
 
-* Longer wait times are observed during peak hours, particularly in the evening.
-* Weekends, especially Sundays, show a significant increase in wait times.
-* Low Staffing levels result in a clear increase in wait times.
+1.  **Highest Average Wait Time on Friday:**
+    The data indicates that Fridays experience the highest average patient wait times. This appears to be influenced by having fewer staff on duty combined with a 
+    higher proportion of critical visit types, which naturally require more intensive care and longer evaluation times.
+2.  **Lowest Average Wait Time on Sunday:**
+    Sundays show the lowest average waiting times regardless of whether the staffing levels are high or low. This suggests that the overall demand or case complexity on 
+   Sundays is lower, meaning that even a reduced staff can manage patient flow effectively without significantly impacting wait times.
 
 ## Root Cause Analysis
 
