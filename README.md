@@ -61,19 +61,28 @@ The analysis includes the following steps:
 ## Anomalies and Patterns
 
 1.  **Highest Average Wait Time on Friday:**
-    The data indicates that Fridays experience the highest average patient wait times. This appears to be influenced by having fewer staff on duty combined with a 
-    higher proportion of critical visit types, which naturally require more intensive care and longer evaluation times.
+      The data indicates that Fridays experience the highest average patient wait times. This appears to be influenced by having fewer staff on duty combined with a 
+      higher proportion of critical visit types, which naturally require more intensive care and longer evaluation times.
+    
 2.  **Lowest Average Wait Time on Sunday:**
-    Sundays show the lowest average waiting times regardless of whether the staffing levels are high or low. This suggests that the overall demand or case complexity on 
-   Sundays is lower, meaning that even a reduced staff can manage patient flow effectively without significantly impacting wait times.
+      Sundays show the lowest average waiting times regardless of whether the staffing levels are high or low. This suggests that the overall demand or case complexity on 
+      Sundays is lower, meaning that even a reduced staff can manage patient flow effectively without significantly impacting wait times.
 
 ## Root Cause Analysis
 
-1.  **Staffing Shortages During Peak Hours:** Insufficient staffing during peak hours leads to increased patient load per staff member, resulting in longer wait times.
-2.  **High Volume of Non-Urgent Patients:** A significant influx of non-urgent patients can clog the ER, delaying care for urgent and critical cases.
+1.  **Staffing Limitations on Peak Demand Days:**
+      On days like Friday, the combination of reduced staffing and increased arrivals of critical cases creates a bottleneck. The current staff mix may not be sufficient      to handle the surge of complex cases, leading to extended wait times.
+
+2.  **Inefficient Resource Allocation and Scheduling:
+      A potential mismatch between staff scheduling and patient arrival patterns may be contributing to the prolonged wait times. There appears to be a disconnect 
+      between peak demand periods and the availability of specialized staff trained to handle critical visits.
 
 ## Recommendations
 
-1.  **Optimize Staff Scheduling:** Implement dynamic staffing schedules that align with peak hours and high-volume days. Consider using predictive analytics to forecast patient volume and adjust staffing accordingly.
-2.  **Triage Process Improvement:** Refine the triage process to efficiently prioritize urgent and critical cases. Consider a fast-track system for non-urgent patients to reduce their wait times and free up resources for more critical patients.
-3.  **Patient Flow Management:** Implement a patient flow management system to track patient movement and identify bottlenecks in real-time. This could involve using digital tools to streamline patient registration, assessment, and treatment processes.
+1.  **Optimize Staff Scheduling:
+      Adjust staffing schedules to better align with the identified peak periods, particularly on Fridays. Consider increasing the number of staff during these high- 
+      demand times or rearranging shifts to ensure that more experienced or specialized personnel are available to manage critical cases.
+   
+2.  **Leverage Predictive Analytics:**
+      Utilize historical data to forecast patient arrival trends and case complexities. Predictive analytics can help in planning and dynamically adjusting the resource 
+      allocation ahead of time to minimize wait times during anticipated high-demand periods.
