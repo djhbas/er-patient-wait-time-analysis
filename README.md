@@ -58,13 +58,6 @@ The analysis includes the following steps:
 * **Staffing Impact:** Lower staffing levels correlate with increased wait times.
 * **ER Visit Type Impact:** Critical and Urgent patients are managed faster than non-urgent ones, but non-urgent patients still exhibit long wait times.
 
-## Key Statistics
-
-* **Average Wait Time:** Calculated and visualized using Power BI and Python.
-* **Median Wait Time:** Calculated to provide a robust measure of central tendency.
-* **Peak Arrival Hours:** Identified using time series analysis in Python and visualized in Power BI.
-* **Wait Time Distribution:** Analyzed to understand the spread and skewness of wait times.
-
 ## Anomalies and Patterns
 
 * Longer wait times are observed during peak hours, particularly in the evening.
