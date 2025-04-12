@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the analysis of Emergency Room (ER) patient wait times, aimed at identifying inefficiencies and bottlenecks contributing to recent increases in wait times. The analysis utilizes a dataset containing patient arrival times, wait times, day of the week, staffing levels, and ER visit types. The analysis was performed using Power BI for data visualization and Google Colab (Python) for statistical analysis.
+This repository contains the analysis of Emergency Room (ER) patient wait times, aimed at identifying inefficiencies and bottlenecks contributing to recent increases in wait times. The analysis utilizes a dataset containing patient arrival times, wait times, day of the week, staffing levels, and ER visit types. The analysis was performed using Excel for **initial data exploration and cleaning**, SQL for **data querying and aggregation**, Power BI for data visualization, and Google Colab (Python) for statistical analysis.
 
 ## Dataset Description
 
@@ -14,6 +14,36 @@ The dataset includes the following columns:
 -   `Day_of_Week`: Day of the week the patient arrived.
 -   `Staff_On_Duty`: Staffing level (high, medium, low).
 -   `ER_Visit_Type`: Urgency level of the visit (urgent, non-urgent, critical).
+
+## Analysis Performed
+
+The analysis includes the following steps:
+
+1.  **Data Cleaning and Preprocessing (Excel):**
+    -   Handling missing values.
+    -   Ensuring data consistency and formatting.
+    -   Basic data exploration to understand the distribution of variables.
+
+2.  **Data Aggregation and Querying (SQL):**
+    -   Calculating average wait times by day of the week, staffing level, and ER visit type.
+    -   Identifying peak arrival times.
+    -   Creating summary tables for further analysis.
+
+3.  **Data Visualization (Power BI):**
+    -   Creating interactive dashboards to visualize wait time trends.
+    -   Generating visualizations for:
+        -   Wait time distribution.
+        -   Average wait times by day of the week.
+        -   Average wait times by staffing level.
+        -   Average wait times by ER visit type.
+        -   Peak arrival time analysis.
+
+4.  **Statistical Analysis (Python/Google Colab):**
+    -   Performing ANOVA tests to determine the statistical significance of differences in wait times across different categories (day of the week, staffing level, ER visit type).
+    -   Calculating correlation coefficients to identify relationships between variables.
+    -   Potentially conducting time series analysis on arrival times and wait times to identify patterns and predict future trends.
+    -   Performing descriptive statistics to understand the central tendency and dispersion of the data.
+    -   Hypothesis testing to validate observed differences.
 
 ## Summary of Findings
 
