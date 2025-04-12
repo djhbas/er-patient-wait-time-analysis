@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the analysis of Emergency Room (ER) patient wait times, aimed at identifying inefficiencies and bottlenecks contributing to recent increases in wait times. The analysis utilizes a dataset containing patient arrival times, wait times, day of the week, staffing levels, and ER visit types. The analysis was performed using Excel for **initial data exploration and cleaning**, SQL for **data querying and aggregation**, Power BI for data visualization, and Google Colab (Python) for statistical analysis.
+This repository contains the analysis of Emergency Room (ER) patient wait times, aimed at identifying inefficiencies and bottlenecks contributing to recent increases in wait times. The analysis utilizes a dataset containing patient arrival times, wait times, day of the week, staffing levels, and ER visit types. The analysis was performed using Excel for **data preparation**, SQL for **data querying and aggregation**, Power BI for **data visualization**, and Google Colab (Python) for **data exploration**.
 
 ## Dataset Description
 
@@ -19,31 +19,36 @@ The dataset includes the following columns:
 
 The analysis includes the following steps:
 
-1.  **Data Cleaning and Preprocessing (Excel):**
-    -   Handling missing values.
-    -   Ensuring data consistency and formatting.
-    -   Basic data exploration to understand the distribution of variables.
+1.  **Data Preparation (Excel):**
+    -   Conditional Formatting
+    -   Pivot Tables and Charts
+    -   Sorting and Filtering
 
 2.  **Data Aggregation and Querying (SQL):**
-    -   Calculating average wait times by day of the week, staffing level, and ER visit type.
-    -   Identifying peak arrival times.
-    -   Creating summary tables for further analysis.
+    -   Identify the day with the most ER traffic.
+    -   Identify days with longer delays.
+    -   Calculate visit volume and wait time per day.
+    -   Determine which staff had longer or shorter wait times.
+    -   Categorize wait time severity.
+    -   Generate rankings of staff performance.
 
 3.  **Data Visualization (Power BI):**
-    -   Creating interactive dashboards to visualize wait time trends.
-    -   Generating visualizations for:
-        -   Wait time distribution.
-        -   Average wait times by day of the week.
-        -   Average wait times by staffing level.
-        -   Average wait times by ER visit type.
-        -   Peak arrival time analysis.
+    -   Create interactive dashboards to visualize wait time trends.
+    -   Generate visualizations for:
+        -    Slicers (Day, Staff, Visit Type)
+        -    Cards displaying Average/Min/Max Waiting Time and Number of Patients
+        -    Wait Time Trend Over Time by Day
+        -    Wait Time by Day of Week
+        -    Wait Time by Visit Type
+        -    Wait Time by Staff on Duty
 
-4.  **Statistical Analysis (Python/Google Colab):**
-    -   Performing ANOVA tests to determine the statistical significance of differences in wait times across different categories (day of the week, staffing level, ER visit type).
-    -   Calculating correlation coefficients to identify relationships between variables.
-    -   Potentially conducting time series analysis on arrival times and wait times to identify patterns and predict future trends.
-    -   Performing descriptive statistics to understand the central tendency and dispersion of the data.
-    -   Hypothesis testing to validate observed differences.
+4.  **Exploratory Data Analysis (Python/Google Colab):**
+    -   Generate summary statistics.
+    -   Create a line chart to show wait time trends over time.
+    -   Create a bar chart for wait time by day of the week.
+    -   Create a box plot for wait time by staff level.
+    -   Create a box plot for wait time by visit type.
+    -   Create a matrix (heatmap) showing average wait time by day of the week and hour.
 
 ## Summary of Findings
 
